@@ -1,6 +1,12 @@
 
+ScrollReveal().reveal('#hero');
+ScrollReveal().reveal('#second');
+ScrollReveal().reveal('#third');
+ScrollReveal().reveal('#fourth');
+ScrollReveal().reveal('#fifth');
+ScrollReveal().reveal('#footer');
 
-
+/*
 function sendMail(e){
     console.log("reached")
     var params = {/*
@@ -8,7 +14,7 @@ function sendMail(e){
     email : document.getElementById('email').value,
     subject : document.getElementById('subject').value,
     message : document.getElementById('message').value,
-*/
+
     full_name: "tt",
     email: "tt",
     subject: "tt",
@@ -24,4 +30,4 @@ function sendMail(e){
 
 const btn = document.getElementById("btn");
 
-btn.addEventListener("click",() => console.log('submitted'));
+btn.addEventListener("click",() => console.log('submitted')); */
