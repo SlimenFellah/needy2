@@ -31,3 +31,20 @@ function sendMail(e){
 const btn = document.getElementById("btn");
 
 btn.addEventListener("click",() => console.log('submitted')); */
+var downloadSection = document.getElementById("download")
+var bigContainer = document.getElementById("bigContainer")
+function showDownload(){
+    downloadSection.classList.remove("hidden")
+    bigContainer.classList.remove("blur-none")
+    downloadSection.classList.add("fixed")
+    bigContainer.classList.add("blur-md")
+}
+function hideDownload(){
+    if (downloadSection.classList.contains("fixed")){
+        
+        downloadSection.classList.remove("fixed")
+        bigContainer.classList.remove("blur-md")
+        downloadSection.classList.add("hidden")
+        bigContainer.classList.add("blur-none")
+    }
+}

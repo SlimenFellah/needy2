@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="./output.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./Assets/N.png" />
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -32,7 +33,8 @@
     <title>Needy</title>
   </head>
   <body class="bg-slate-100 relative">
-    <div class="">
+    <div id="bigContainer"
+    onclick="">
       <div id="main " class="relative min-h-screen">
         <img
           class="z-1 h-full w-1/2 absolute right-0"
@@ -46,6 +48,7 @@
           <div class="hidden md:inline-block">
             <button
               class="bg-white border-2 border-black p-4 m-2 rounded-xl hover:bg-slate-200"
+              onclick="showDownload()"
             >
               Download the app
             </button>
@@ -202,7 +205,7 @@
               application.<br />
               We love to hear from you.
             </p>
-            <form id="fb_form" class="my-4">
+            <form id="fb_form" class="my-4 ">
               <label>Full name:</label>
               <input
                 class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
@@ -258,12 +261,14 @@
           </h1>
           <div class="flex justify-around">
             <a class="text-sm md:text-xl hover:cursor-pointer"
+              onclick="showDownload()"
               >Download the app</a
             >
             <a class="text-sm md:text-xl hover:cursor-pointer"
               >Change to dark mode</a
             >
             <a class="text-sm md:text-xl hover:cursor-pointer"
+            href="#fifth"
               >Give a feed back</a
             >
           </div>
@@ -282,26 +287,24 @@
     </div>
     <div
       id="download"
-      class="hidden top-0 w-screen h-screen items-center justify-center"
+      class="hidden top-0 w-screen h-screen flex  items-center justify-center"
     >
-      <div class="bg-white relative w-2/3 h-2/3 p-4 text-center">
+      <div class="bg-white relative w-2/3 h-2/3 p-4 text-center border-2 border-cyan-600 rounded-md">
         <h1 class="text-xl font-semibold">Thank you for choosing needy :</h1>
         <h2>Choose your option</h2>
-        <a class="absolute right-4 top-4 text-2xl m-2 hover:cursor-pointer"
-          >X</a
-        >
-        <div class="h-full flex justify-around items-center">
-          <div class="w-1/3">
+        <a class="absolute p-2 md:p-4 right-0 top-0 md:right-4 md:top-4 text-2xl m-2 hover:cursor-pointer" onclick="hideDownload()">X</a>
+        <div class=" md:h-full flex justify-around items-center flex-col md:flex-row">
+          <div class="my-2 md:my-0 w-1/2 md:w-1/3 hover:cursor-pointer">
             <img src="./Assets/gp.png" />
             <h2>Google play</h2>
           </div>
-          <div class="w-1/3">
+          <div class="my-2 md:my-0 w-1/2 md:w-1/3 hover:cursor-pointer">
             <img src="./Assets/as.png" />
             <h2>App store</h2>
           </div>
-          <div class="w-1/4">
+          <div class="my-2 md:my-0 w-1/2 md:w-1/4 hover:cursor-pointer">
             <img class="" src="./Assets/apk.png" />
-            <h2>Apk</h2>
+            <h2>Apk File</h2>
           </div>
         </div>
       </div>
