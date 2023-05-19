@@ -47,6 +47,7 @@
           class="z-1 h-full w-1/2 absolute right-0"
           src="./Assets/shape.png"
         />
+        <!-- Navbar -->
         <div
           id="navBar"
           class="md:flex justify-between items-center relative p-4 z-2"
@@ -56,16 +57,19 @@
             <button
               class="bg-white border-2 border-black p-4 m-2 rounded-xl hover:bg-slate-100 text-black"
               onclick="showDownload()"
+              data-lang="download"
             >
               Download the app
             </button>
             <button
               class="text-white bg-black p-4 m-2 rounded-xl hover:bg-slate-900"
+              data-lang="knowMore"
             >
               Know more
             </button>
           </div>
         </div>
+        <!-- Hero -->
         <div
           id="hero"
           class="h-full relative z-2 text-center md:flex md:items-center md:justify-between p-12"
@@ -75,7 +79,7 @@
           >
             <h1 class="Pacifico text-8xl md:text-9xl">Needy</h1>
             <h3 class="md:pl-16 pl-4 font-light">Helping services</h3>
-            <h1 class="m-8 text-xl md:text-3xl">
+            <h1 class="m-8 text-xl md:text-3xl" data-lang="mark">
               Help people, make people happy.
             </h1>
             <a
@@ -83,7 +87,7 @@
               href="#second"
             >
               <i class="ri-arrow-down-line"></i>
-              WHO ARE US ?
+              <span data-lang="wru">WHO ARE US ?</span>
               <i class="ri-arrow-down-line"></i>
             </a>
           </div>
@@ -94,16 +98,18 @@
       </div>
       <!-- Who are us -->
       <div id="second" class="w-3/4 mx-auto text-center my-4 p-4 min-h-screen">
-        <h1 class="text-6xl font-bold my-6">Who are Us ?</h1>
+        <h1 data-lang="wru" class="text-6xl font-bold my-6">Who are Us ?</h1>
         <p class="my-6">
-          <span class="font-semibold">We are </span> a group of computer science
-          students at esi sba, who opted for the needy app as a 2cpi project
-          title.<br />
-          Our team members are: Ouerred islem, Fellah slimene, Mokhtari meriem,
-          Oueddan youcef, Zenasni youcef, Chaib fakhreddin.
+          <span class="font-semibold" data-lang="we">We are </span>
+          <span data-lang="weare"
+            >a group of computer science students at esi sba, who opted for the
+            needy app as a 2cpi project title.<br />
+            Our team members are: Ouerred islem, Fellah slimene, Mokhtari
+            meriem, Oueddan youcef, Zenasni youcef, Chaib fakhreddin.</span
+          >
         </p>
         <img class="w-1/2 mx-auto rounded-full" src="./Assets/esi.png" />
-        <p class="my-6">
+        <p class="my-6" data-lang="whatis">
           The needy app is an app for helping people find their needs from
           objects to services that are provied by other users.
         </p>
@@ -115,24 +121,30 @@
           class="h-full absolute z-1 -left-44 md:left-0"
         />
         <div id="content" class="h-full relative z-2 p-4">
-          <h1 class="text-center text-6xl font-bold">The need never stops !</h1>
+          <h1 class="text-center text-6xl font-bold" data-lang="title2">
+            The need never stops !
+          </h1>
           <div class="mt-16 md:flex flex-row items-center justify-around">
             <div id="hands" class="w-2/3 mx-auto md:w-1/3 flex items-center">
               <img src="./Assets/hands.png" class="" />
             </div>
             <div class="md:w-1/2 my-12 mx-8 text-center">
               <p class="text-2xl">
-                4.5 million Americans will a need blood transfusion each year,
-                18 percent of the nation's population are homeless, the biggest
-                part of the world have limited income. and can't buy enough
-                tools, or pay services.<br />
-                <span class="text-cyan-950 md:text-cyan-600"
+                <span data-lang="parag2">
+                  4.5 million Americans will a need blood transfusion each year,
+                  18 percent of the nation's population are homeless, the
+                  biggest part of the world have limited income. and can't buy
+                  enough tools, or pay services.<br />
+                </span>
+
+                <span class="text-cyan-950 md:text-cyan-600" data-lang="parag21"
                   >So why not help those people in their needs.</span
                 >
               </p>
               <button
                 class="bg-cyan-600 p-4 m-4 text-white rounded hover:bg-cyan-800"
                 onclick="showDownload()"
+                data-lang="btn2"
               >
                 Start helping now
               </button>
@@ -145,7 +157,9 @@
         id="fourth"
         class="min-h-screen p-4 my-4 flex flex-col justify-around"
       >
-        <h1 class="text-center text-6xl font-bold my-4">With needy :</h1>
+        <h1 class="text-center text-6xl font-bold my-4" data-lang="title3">
+          With needy :
+        </h1>
         <div
           id="cards"
           class="grid grid-cols-1 text-center md:text-left md:grid-cols-4 gap-2"
@@ -155,8 +169,10 @@
             class="bg-cyan-600 rounded-sm opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
           >
             <img src="./Assets/map2.png" class="mx-auto md:mx-4 invert w-1/4" />
-            <h1 class="font-semibold m-4">Find the closest</h1>
-            <p class="m-4 mb-16">
+            <h1 class="font-semibold m-4" data-lang="card1t">
+              Find the closest
+            </h1>
+            <p class="m-4 mb-16" data-lang="card1p">
               Due to needy geolocalisation system, you can find the closest
               helper from you.
             </p>
@@ -166,8 +182,8 @@
             class="bg-cyan-600 rounded-sm opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
           >
             <img src="./Assets/safe.png" class="mx-auto md:mx-4 invert w-1/4" />
-            <h1 class="font-semibold m-4">You are safe</h1>
-            <p class="m-4 mb-16">
+            <h1 class="font-semibold m-4" data-lang="card2t">You are safe</h1>
+            <p class="m-4 mb-16" data-lang="card2p">
               Have enough informations about your contact make your dealing
               safe, and avoids you scammers.
             </p>
@@ -180,8 +196,10 @@
               src="./Assets/helpHands.png"
               class="mx-auto md:mx-4 invert w-1/4"
             />
-            <h1 class="font-semibold m-4">Multiple categories</h1>
-            <p class="m-4 mb-16">
+            <h1 class="font-semibold m-4" data-lang="card3t">
+              Multiple categories
+            </h1>
+            <p class="m-4 mb-16" data-lang="card3p">
               Needy offers multiple categories donations, to make sure you will
               find your needs.
             </p>
@@ -194,14 +212,16 @@
               src="./Assets/world.png"
               class="mx-auto md:mx-4 invert w-1/4"
             />
-            <h1 class="font-semibold m-4">All over the world</h1>
-            <p class="m-4 mb-16">
+            <h1 class="font-semibold m-4" data-lang="card4t">
+              All over the world
+            </h1>
+            <p class="m-4 mb-16" data-lang="card4p">
               Wherever you are you can use needy, it is not specified to any
               country or region.
             </p>
           </div>
         </div>
-        <h1 class="text-xl text-center">And much more...</h1>
+        <h1 class="text-xl text-center" data-lang="mm">And much more...</h1>
       </div>
       <!-- Feed back -->
       <div
@@ -212,12 +232,15 @@
           class="z-1 w-1/2 absolute right-0 h-full"
           src="./Assets/shape.png"
         />
-        <h1 class="text-center text-6xl font-bold relative z-2">
+        <h1
+          class="text-center text-6xl font-bold relative z-2"
+          data-lang="title4"
+        >
           Give a feed back :
         </h1>
         <div class="md:flex justify-around relative z-2">
           <div class="my-4 md:w-1/2 md:my-12 mx-8 text-center">
-            <p class="text-xl">
+            <p class="text-xl" data-lang="parag4">
               Contribute in making needy a better application :<br />
               By giving a feed back about the idea, or your experience with the
               application.<br />
@@ -225,7 +248,7 @@
             </p>
             <form id="fb_form" class="my-4 w-3/4 mx-auto">
               <div class="md:float-right">
-                <label class="">Full name: </label>
+                <label class="" data-lang="fn">Full name: </label>
                 <input
                   class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
                   id="name"
@@ -233,7 +256,7 @@
                 /><br />
               </div>
               <div class="md:float-right">
-                <label class="md:mr-2">Email: </label>
+                <label class="md:mr-2" data-lang="em">Email: </label>
                 <input
                   class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
                   id="email"
@@ -241,7 +264,7 @@
                 /><br />
               </div>
               <div class="md:float-right">
-                <label class="md:mr-2">Subject: </label>
+                <label class="md:mr-2" data-lang="sb">Subject: </label>
                 <input
                   class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
                   id="subject"
@@ -249,7 +272,7 @@
                 /><br />
               </div>
               <div class="md:flex md:float-right">
-                <label class="md:mr-2 md:mt-1">Message:</label>
+                <label class="md:mr-2 md:mt-1" data-lang="msg">Message:</label>
                 <input
                   class="block mx-auto md:mx-0 md:inline border-solid border-2 md:w-96 h-52 border-cyan-600 rounded m-2"
                   id="message"
@@ -262,6 +285,7 @@
                 class="w-1/2 mx-auto bg-cyan-600 p-4 m-4 text-white border-1 border-white rounded hover:bg-cyan-800"
                 type="submit"
                 id="btn"
+                data-lang="sbm"
                 onclick=" 
                   sendMail(e)
                   "
@@ -304,9 +328,21 @@
           </div>
           <div class="flex justify-around">
             <a class="text-sm md:text-xl hover:cursor-pointer">Know more</a>
-            <a class="text-sm md:text-xl hover:cursor-pointer"
+            <!-- <a class="text-sm md:text-xl hover:cursor-pointer"
               >Change language</a
-            >
+            > -->
+            <div class="flex flex-row">
+              <p class="text-sm md:text-xl mx-2">Change language :</p>
+              <select
+                id="selector"
+                class="text-sm md:text-lg bg-white text-black border-2 rounded-md border-black"
+                onchange="changeLanguage()"
+              >
+                <option value="en">English</option>
+                <option value="fr">Francais</option>
+                <option value="ar">العربية</option>
+              </select>
+            </div>
           </div>
           <h2>
             Made with
@@ -328,8 +364,10 @@
       <div
         class="bg-white relative w-2/3 h-2/3 p-4 text-center border-2 border-cyan-600 rounded-md"
       >
-        <h1 class="text-xl font-semibold">Thank you for choosing needy :</h1>
-        <h2>Choose your option</h2>
+        <h1 class="text-xl font-semibold" data-lang="tnk">
+          Thank you for choosing needy :
+        </h1>
+        <h2 data-lang="cho">Choose your option</h2>
         <a
           class="absolute p-2 md:p-4 right-0 top-0 md:right-4 md:top-4 text-2xl m-2 hover:cursor-pointer"
           onclick="hideDownload()"
