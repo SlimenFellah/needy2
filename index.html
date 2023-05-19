@@ -8,10 +8,16 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <link href="./output.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./Assets/N.png" />
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -23,18 +29,15 @@
 
       btn.addEventListener("click", () => console.log("submitted"));
     </script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      emailjs.init("9FBSvWk9qlKGhDriC");
-    </script>
+
     <title>Needy</title>
   </head>
-  <body class="bg-slate-100 relative">
-    <div id="bigContainer"
-    onclick="">
+  <body
+    class="white bg-slate-50 transition-colors duration-300 text-black relative"
+    id="body"
+  >
+    <div id="bigContainer" onclick="">
+      <!-- Navbar + Main -->
       <div id="main " class="relative min-h-screen">
         <img
           class="z-1 h-full w-1/2 absolute right-0"
@@ -47,7 +50,7 @@
           <h1 class="Pacifico text-center text-2xl md:mx-4">Needy</h1>
           <div class="hidden md:inline-block">
             <button
-              class="bg-white border-2 border-black p-4 m-2 rounded-xl hover:bg-slate-200"
+              class="bg-white border-2 border-black p-4 m-2 rounded-xl hover:bg-slate-100 text-black"
               onclick="showDownload()"
             >
               Download the app
@@ -64,10 +67,10 @@
           class="h-full relative z-2 text-center md:flex md:items-center md:justify-between p-12"
         >
           <div
-            class="text-black md:w-1/2 h-full flex justify-between items-center flex-col"
+            class="md:w-1/2 h-full flex justify-between items-center flex-col"
           >
             <h1 class="Pacifico text-8xl md:text-9xl">Needy</h1>
-            <h3 class="md:pl-16 pl-4 font-semibold">Helping services</h3>
+            <h3 class="md:pl-16 pl-4 font-light">Helping services</h3>
             <h1 class="m-8 text-xl md:text-3xl">
               Help people, make people happy.
             </h1>
@@ -81,18 +84,19 @@
             </a>
           </div>
           <div id="image" class="my-4 md:w-1/2 flex justify-center">
-            <img class="rotate-6 w-5/12" src="Assets/phone3.png" />
+            <img class="rotate-6 w-5/12" src="Assets/phone.png" />
           </div>
         </div>
       </div>
+      <!-- Who are us -->
       <div id="second" class="w-3/4 mx-auto text-center my-4 p-4 min-h-screen">
         <h1 class="text-6xl font-bold my-6">Who are Us ?</h1>
         <p class="my-6">
           <span class="font-semibold">We are </span> a group of computer science
-          studen at esi sba, who opted for the needy app as a 2cpi project
+          students at esi sba, who opted for the needy app as a 2cpi project
           title.<br />
           Our team members are: Ouerred islem, Fellah slimene, Mokhtari meriem,
-          Oueddan youced, Zenasni youcef, Chaib fakhreddin.
+          Oueddan youcef, Zenasni youcef, Chaib fakhreddin.
         </p>
         <img class="w-1/2 mx-auto rounded-full" src="./Assets/esi.png" />
         <p class="my-6">
@@ -100,6 +104,7 @@
           objects to services that are provied by other users.
         </p>
       </div>
+      <!-- The need never stops -->
       <div id="third" class="min-h-screen relative">
         <img
           src="./Assets/shape2.png"
@@ -123,6 +128,7 @@
               </p>
               <button
                 class="bg-cyan-600 p-4 m-4 text-white rounded hover:bg-cyan-800"
+                onclick="showDownload()"
               >
                 Start helping now
               </button>
@@ -130,6 +136,7 @@
           </div>
         </div>
       </div>
+      <!-- With needy -->
       <div
         id="fourth"
         class="min-h-screen p-4 my-4 flex flex-col justify-around"
@@ -137,14 +144,14 @@
         <h1 class="text-center text-6xl font-bold my-4">With needy :</h1>
         <div
           id="cards"
-          class="grid grid-cols-1 text-center md:text-left md:grid-cols-4 gap-2 m-8"
+          class="grid grid-cols-1 text-center md:text-left md:grid-cols-4 gap-2"
         >
           <div
             id="card"
-            class="bg-cyan-600 opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
+            class="bg-cyan-600 rounded-sm opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
           >
-            <img src="./Assets/map.png" class="mx-auto md:mx-0 invert w-1/4" />
-            <h1 class="font-semibold m-4 mb-8">Find the closest</h1>
+            <img src="./Assets/map2.png" class="mx-auto md:mx-4 invert w-1/4" />
+            <h1 class="font-semibold m-4">Find the closest</h1>
             <p class="m-4 mb-16">
               Due to needy geolocalisation system, you can find the closest
               helper from you.
@@ -152,40 +159,47 @@
           </div>
           <div
             id="card"
-            class="bg-cyan-600 opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
+            class="bg-cyan-600 rounded-sm opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
           >
-            <img src="./Assets/map.png" class="mx-auto md:mx-0 invert w-1/4" />
-            <h1 class="font-semibold m-4 mb-8">Find the closest</h1>
+            <img src="./Assets/safe.png" class="mx-auto md:mx-4 invert w-1/4" />
+            <h1 class="font-semibold m-4">You are safe</h1>
             <p class="m-4 mb-16">
-              Due to needy geolocalisation system, you can find the closest
-              helper from you.
+              Have enough informations about your contact make your dealing
+              safe, and avoids you scammers.
             </p>
           </div>
           <div
             id="card"
-            class="bg-cyan-600 opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
+            class="bg-cyan-600 rounded-sm opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
           >
-            <img src="./Assets/map.png" class="mx-auto md:mx-0 invert w-1/4" />
-            <h1 class="font-semibold m-4 mb-8">Find the closest</h1>
+            <img
+              src="./Assets/helpHands.png"
+              class="mx-auto md:mx-4 invert w-1/4"
+            />
+            <h1 class="font-semibold m-4">Multiple categories</h1>
             <p class="m-4 mb-16">
-              Due to needy geolocalisation system, you can find the closest
-              helper from you.
+              Needy offers multiple categories donations, to make sure you will
+              find your needs.
             </p>
           </div>
           <div
             id="card"
-            class="bg-cyan-600 opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
+            class="bg-cyan-600 rounded-sm opacity-70 mx-auto hover:opacity-100 transition ease-in duration-100 text-white p-4 h-full"
           >
-            <img src="./Assets/map.png" class="mx-auto md:mx-0 invert w-1/4" />
-            <h1 class="font-semibold m-4 mb-8">Find the closest</h1>
+            <img
+              src="./Assets/world.png"
+              class="mx-auto md:mx-4 invert w-1/4"
+            />
+            <h1 class="font-semibold m-4">All over the world</h1>
             <p class="m-4 mb-16">
-              Due to needy geolocalisation system, you can find the closest
-              helper from you.
+              Wherever you are you can use needy, it is not specified to any
+              country or region.
             </p>
           </div>
         </div>
         <h1 class="text-xl text-center">And much more...</h1>
       </div>
+      <!-- Feed back -->
       <div
         id="fifth"
         class="relative min-h-screen flex flex-col justify-around"
@@ -205,27 +219,33 @@
               application.<br />
               We love to hear from you.
             </p>
-            <form id="fb_form" class="my-4 ">
-              <label>Full name:</label>
-              <input
-                class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
-                id="fullName"
-                name="name"
-              /><br />
-              <label>Email:</label>
-              <input
-                class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
-                id="email"
-                name="email"
-              /><br />
-              <label>Subject:</label>
-              <input
-                class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
-                id="subject"
-                name="subject"
-              /><br />
-              <div class="md:flex items-start flex-row justify-center">
-                <label>Message:</label>
+            <form id="fb_form" class="my-4 w-3/4 mx-auto">
+              <div class="float-right">
+                <label class="md:mr-1">Full name: </label>
+                <input
+                  class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
+                  id="email"
+                  name="email"
+                /><br />
+              </div>
+              <div class="float-right">
+                <label class="md:mr-2">Email: </label>
+                <input
+                  class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
+                  id="email"
+                  name="email"
+                /><br />
+              </div>
+              <div class="float-right">
+                <label class="md:mr-2">Subject: </label>
+                <input
+                  class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
+                  id="subject"
+                  name="subject"
+                /><br />
+              </div>
+              <div class="md:flex float-right">
+                <label class="md:mr-2 md:mt-1">Message:</label>
                 <input
                   class="block mx-auto md:mx-0 md:inline border-solid border-2 md:w-96 h-52 border-cyan-600 rounded m-2"
                   id="message"
@@ -235,7 +255,7 @@
               </div>
 
               <button
-                class="bg-cyan-600 p-4 m-4 text-white rounded hover:bg-cyan-800"
+                class="w-1/2 mx-auto bg-cyan-600 p-4 m-4 text-white border-1 border-white rounded hover:bg-cyan-800"
                 type="submit"
                 id="btn"
               >
@@ -248,6 +268,7 @@
           </div>
         </div>
       </div>
+      <!-- Footer -->
       <div
         id="footer"
         class="h-48 relative border-solid border-2 border-cyan-600"
@@ -260,15 +281,17 @@
             NEEDY 2023 © ALL RIGHTS RESERVED
           </h1>
           <div class="flex justify-around">
-            <a class="text-sm md:text-xl hover:cursor-pointer"
+            <a
+              class="text-sm md:text-xl hover:cursor-pointer"
               onclick="showDownload()"
               >Download the app</a
             >
-            <a class="text-sm md:text-xl hover:cursor-pointer"
-              >Change to dark mode</a
+            <a
+              class="text-sm md:text-xl hover:cursor-pointer"
+              onclick="switchMode()"
+              >Switch dark/white theme</a
             >
-            <a class="text-sm md:text-xl hover:cursor-pointer"
-            href="#fifth"
+            <a class="text-sm md:text-xl hover:cursor-pointer" href="#fifth"
               >Give a feed back</a
             >
           </div>
@@ -285,27 +308,54 @@
         </div>
       </div>
     </div>
+    <!-- Downlad -->
     <div
       id="download"
-      class="hidden top-0 w-screen h-screen flex  items-center justify-center"
+      class="hidden top-0 w-screen h-screen flex items-center justify-center text-black"
     >
-      <div class="bg-white relative w-2/3 h-2/3 p-4 text-center border-2 border-cyan-600 rounded-md">
+      <div
+        class="bg-white relative w-2/3 h-2/3 p-4 text-center border-2 border-cyan-600 rounded-md"
+      >
         <h1 class="text-xl font-semibold">Thank you for choosing needy :</h1>
         <h2>Choose your option</h2>
-        <a class="absolute p-2 md:p-4 right-0 top-0 md:right-4 md:top-4 text-2xl m-2 hover:cursor-pointer" onclick="hideDownload()">X</a>
-        <div class=" md:h-full flex justify-around items-center flex-col md:flex-row">
-          <div class="my-2 md:my-0 w-1/2 md:w-1/3 hover:cursor-pointer">
-            <img src="./Assets/gp.png" />
-            <h2>Google play</h2>
-          </div>
-          <div class="my-2 md:my-0 w-1/2 md:w-1/3 hover:cursor-pointer">
-            <img src="./Assets/as.png" />
-            <h2>App store</h2>
-          </div>
-          <div class="my-2 md:my-0 w-1/2 md:w-1/4 hover:cursor-pointer">
-            <img class="" src="./Assets/apk.png" />
-            <h2>Apk File</h2>
-          </div>
+        <a
+          class="absolute p-2 md:p-4 right-0 top-0 md:right-4 md:top-4 text-2xl m-2 hover:cursor-pointer"
+          onclick="hideDownload()"
+          >X</a
+        >
+        <div
+          class="md:h-full flex justify-around items-center flex-col md:flex-row"
+        >
+          <a
+            class="my-2 md:my-0 w-1/2 md:w-1/3 hover:cursor-pointer"
+            href="http://play.google.com/store/search?q=needy&c=apps"
+            target="_blank"
+          >
+            <div>
+              <img src="./Assets/gp2.png" />
+              <h2>Google play</h2>
+            </div>
+          </a>
+          <a
+            class="my-2 md:my-0 w-1/2 md:w-1/3 hover:cursor-pointer"
+            href="https://www.apple.com/fr/app-store/"
+            target="_blank"
+          >
+            <div>
+              <img src="./Assets/as.png" />
+              <h2>App store</h2>
+            </div>
+          </a>
+          <a
+            class="my-2 md:my-0 w-1/2 md:w-1/4 hover:cursor-pointer"
+            href="./Assets/N.png"
+            download
+          >
+            <div>
+              <img src="./Assets/apk.png" />
+              <h2>Apk File</h2>
+            </div>
+          </a>
         </div>
       </div>
     </div>

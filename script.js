@@ -6,31 +6,6 @@ ScrollReveal().reveal('#fourth');
 ScrollReveal().reveal('#fifth');
 ScrollReveal().reveal('#footer');
 
-/*
-function sendMail(e){
-    console.log("reached")
-    var params = {/*
-    full_name : document.getElementById('fullName').value,
-    email : document.getElementById('email').value,
-    subject : document.getElementById('subject').value,
-    message : document.getElementById('message').value,
-
-    full_name: "tt",
-    email: "tt",
-    subject: "tt",
-    message: "tt",
-   }
-   emailjs.sendForm("service_f6vgr2r","template_vt0ouh7", params).then(function() {
-    console.log('SUCCESS!');
-    }, function(error) {
-        console.log('FAILED...', error);
-    });
-
-}
-
-const btn = document.getElementById("btn");
-
-btn.addEventListener("click",() => console.log('submitted')); */
 var downloadSection = document.getElementById("download")
 var bigContainer = document.getElementById("bigContainer")
 function showDownload(){
@@ -48,3 +23,21 @@ function hideDownload(){
         bigContainer.classList.add("blur-none")
     }
 }
+
+
+var body = document.getElementById("body")
+function switchMode(){
+    if(body.classList.contains("white")){
+        body.classList.remove("white", "bg-slate-50", "text-black")
+        body.classList.add("dark", "bg-gray-700", "text-white")
+    }
+    else if(body.classList.contains("dark")){
+        body.classList.remove("dark", "bg-gray-700", "text-white")
+        body.classList.add("white", "bg-slate-50", "text-black")
+    }
+}
+/*
+var apkDiv = document.getElementsByClassName("apkDiv")
+apkDiv.addEventListener('click', {
+    download("./Assets/N.png", "Needy.apk")
+},false)*/
