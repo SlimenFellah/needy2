@@ -20,23 +20,27 @@
     />
     <link href="./output.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./Assets/N.png" />
+    <!-- ScrollReveal script -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({ duration: 1000 });
     </script>
-    <script>
+    <!-- Main Script -->
+    <script src="./script.js" defer></script>
+
+    <!-- <script>
       const btn = document.getElementById("btn");
 
       btn.addEventListener("click", () => console.log("submitted"));
     </script>
-
+  -->
     <title>Needy</title>
   </head>
   <body
     class="white bg-slate-50 transition-colors duration-300 text-black relative"
     id="body"
   >
-    <div id="bigContainer" onclick="">
+    <div id="bigContainer" onclick="{}">
       <!-- Navbar + Main -->
       <div id="main " class="relative min-h-screen">
         <img
@@ -220,15 +224,15 @@
               We love to hear from you.
             </p>
             <form id="fb_form" class="my-4 w-3/4 mx-auto">
-              <div class="float-right">
-                <label class="md:mr-1">Full name: </label>
+              <div class="md:float-right">
+                <label class="">Full name: </label>
                 <input
                   class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
-                  id="email"
-                  name="email"
+                  id="name"
+                  name="name"
                 /><br />
               </div>
-              <div class="float-right">
+              <div class="md:float-right">
                 <label class="md:mr-2">Email: </label>
                 <input
                   class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
@@ -236,7 +240,7 @@
                   name="email"
                 /><br />
               </div>
-              <div class="float-right">
+              <div class="md:float-right">
                 <label class="md:mr-2">Subject: </label>
                 <input
                   class="block mx-auto md:inline border-solid border-2 md:w-96 border-cyan-600 rounded m-2"
@@ -244,7 +248,7 @@
                   name="subject"
                 /><br />
               </div>
-              <div class="md:flex float-right">
+              <div class="md:flex md:float-right">
                 <label class="md:mr-2 md:mt-1">Message:</label>
                 <input
                   class="block mx-auto md:mx-0 md:inline border-solid border-2 md:w-96 h-52 border-cyan-600 rounded m-2"
@@ -258,6 +262,9 @@
                 class="w-1/2 mx-auto bg-cyan-600 p-4 m-4 text-white border-1 border-white rounded hover:bg-cyan-800"
                 type="submit"
                 id="btn"
+                onclick=" 
+                  sendMail(e)
+                  "
               >
                 Submit
               </button>
@@ -302,8 +309,13 @@
             >
           </div>
           <h2>
-            Made with <img src="./Assets/hearth.png" class="w-4 inline" /> by
-            Slimene Fellah
+            Made with
+            <img
+              onclick="getHearts()"
+              src="./Assets/hearth.png"
+              class="w-4 inline hover:cursor-pointer"
+            />
+            by Slimene Fellah
           </h2>
         </div>
       </div>
@@ -359,6 +371,15 @@
         </div>
       </div>
     </div>
+    <!-- EmailJs script -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("SH7zpKxtz_Qz-i4Cb");
+      })();
+    </script>
   </body>
-  <script src="./script.js"></script>
 </html>

@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+
+.Pacifico{
+    font-family: 'Pacifico', cursive;
+}
+.Poppins{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;    
+}
+.hearts{
+    position: fixed;
+    top : -1vh;
+    transform: translateY(0%);
+    left: 0%;
+    animation: fall 1s ease-in 1 forwards;
+
+}
+@keyframes fall{
+    0%{
+        transform: translateY(-50vh);
+    }
+    100%{
+        transform: translateY(250vh);
+        
+    }
+    
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(0, 150, 187);
+}
+::-webkit-scrollbar-thumb{
+    background: white;
+    width: 90%;
+}
+input{
+    color: black;
+}
