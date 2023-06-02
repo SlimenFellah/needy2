@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking the icons and fonts -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -33,20 +34,21 @@
 
       btn.addEventListener("click", () => console.log("submitted"));
     </script>
-  -->
+    -->
     <title>Needy</title>
   </head>
   <body
     class="white bg-slate-50 transition-colors duration-300 text-black relative"
     id="body"
   >
-    <div id="bigContainer" onclick="{}">
+    <div id="bigContainer">
       <!-- Navbar + Main -->
-      <div id="main " class="relative min-h-screen">
+      <div id="main" class="relative min-h-screen">
         <img
           class="z-1 h-full w-1/2 absolute right-0"
-          src="./Assets/shape.png"
+          src="./Assets/shapePhone.png"
         />
+
         <!-- Navbar -->
         <div
           id="navBar"
@@ -78,7 +80,7 @@
             class="md:w-1/2 h-full flex justify-between items-center flex-col"
           >
             <h1 class="Pacifico text-8xl md:text-9xl">Needy</h1>
-            <h3 class="md:pl-16 pl-4 font-light">Helping services</h3>
+            <h3 class="md:pl-16 pl-4 font-medium">Helping services</h3>
             <h1 class="m-8 text-xl md:text-3xl" data-lang="mark">
               Help people, make people happy.
             </h1>
@@ -108,7 +110,7 @@
             meriem, Oueddan youcef, Zenasni youcef, Chaib fakhreddin.</span
           >
         </p>
-        <img class="w-1/2 mx-auto rounded-full" src="./Assets/esi.png" />
+        <img class="w-1/3 mx-auto rounded-full" src="./Assets/esi.png" />
         <p class="my-6" data-lang="whatis">
           The needy app is an app for helping people find their needs from
           objects to services that are provied by other users.
@@ -117,7 +119,7 @@
       <!-- The need never stops -->
       <div id="third" class="min-h-screen relative">
         <img
-          src="./Assets/shape2.png"
+          src="./Assets/shape2Phone.png"
           class="h-full absolute z-1 -left-44 md:left-0"
         />
         <div id="content" class="h-full relative z-2 p-4">
@@ -230,7 +232,7 @@
       >
         <img
           class="z-1 w-1/2 absolute right-0 h-full"
-          src="./Assets/shape.png"
+          src="./Assets/shapePhone.png"
         />
         <h1
           class="text-center text-6xl font-bold relative z-2"
@@ -246,7 +248,12 @@
               application.<br />
               We love to hear from you.
             </p>
-            <form id="fb_form" class="my-4 w-3/4 mx-auto">
+            <form
+              id="fb_form"
+              class="my-4 w-3/4 mx-auto"
+              action="https://formsubmit.co/needyesi123@gmail.com"
+              method="POST"
+            >
               <div class="md:float-right">
                 <label class="" data-lang="fn">Full name: </label>
                 <input
@@ -283,12 +290,8 @@
 
               <button
                 class="w-1/2 mx-auto bg-cyan-600 p-4 m-4 text-white border-1 border-white rounded hover:bg-cyan-800"
-                type="submit"
                 id="btn"
                 data-lang="sbm"
-                onclick=" 
-                  sendMail(e)
-                  "
               >
                 Submit
               </button>
@@ -410,6 +413,7 @@
       </div>
     </div>
     <!-- EmailJs script -->
+    <!-- 
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -418,6 +422,6 @@
       (function () {
         emailjs.init("SH7zpKxtz_Qz-i4Cb");
       })();
-    </script>
+    </script> -->
   </body>
 </html>
